@@ -3,25 +3,15 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import HomePage from './pages/homepage/homepage.component';
-
-const HatsPage = (props) => (
-  <div>
-    <h1>Hats Page { props.match.params.hatId } { props.match.url }</h1>
-  </div>
-);
+import ShopPage from './pages/shop/shop.component';
 
 function App() {
   return (
     <div>
       <Router>
         <Switch>
-          <Route path="/hats/:hatId" component={ HatsPage } />
-          <Route path="/shop/hats" component={ HatsPage } />
-          <Route path="/shop/sneakers" component={ HatsPage } />
-          <Route path="/shop/jackets" component={ HatsPage } />
-          <Route path="/shop/womens" component={ HatsPage } />
-          <Route path="/shop/mens" component={ HatsPage } />
-          <Route path="/" component={ HomePage } />
+          <Route exact path="/" component={ HomePage } />
+          <Route path="/shop" component={ ShopPage } />
         </Switch>
       </Router>
     </div>

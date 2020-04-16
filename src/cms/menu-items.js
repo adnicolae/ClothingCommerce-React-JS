@@ -31,4 +31,6 @@ export const MENU_DATA = [
     id: 5,
     linkUrl: 'shop/mens'
   }
-]
+];
+
+export default MENU_DATA;

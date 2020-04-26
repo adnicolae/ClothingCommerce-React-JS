@@ -1,4 +1,5 @@
-export const SHOP_DATA = [
+export const SHOP_DATA = {
+  collections: [
   {
     id: 1,
     title: 'Hats',
@@ -244,6 +245,6 @@ export const SHOP_DATA = [
       }
     ]
   }
-];
+]};
 
 export default SHOP_DATA;

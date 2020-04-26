@@ -1,4 +1,5 @@
-export const MENU_DATA = [
+export const MENU_DATA = {
+  sections: [
   {
     title: 'hats',
     imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
@@ -31,6 +32,6 @@ export const MENU_DATA = [
     id: 5,
     linkUrl: 'shop/mens'
   }
-];
+]};
 
 export default MENU_DATA;

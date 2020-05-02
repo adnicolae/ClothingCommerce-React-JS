@@ -1,7 +1,11 @@
 import SHOP_DATA from '../../cms/shop-data';
 import ShopActionTypes from './shop.types';
 
-export const shopReducer = (state = SHOP_DATA, action) => {
+const INITIAL_STATE = {
+  collections: null 
+};
+
+export const shopReducer = (state = INITIAL_STATE, action) => {
   switch(action.type) {
     case ShopActionTypes.UPDATE_COLLECTIONS:
       return {

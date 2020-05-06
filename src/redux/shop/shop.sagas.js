@@ -30,6 +30,6 @@ export function* fetchCollectionsStart() {
 
 export function* shopSagas() {
   yield all([
-    call(fetchCollectionsStart())
+    call(fetchCollectionsStart)
   ])
 }
